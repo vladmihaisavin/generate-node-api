@@ -5,6 +5,9 @@ Out of the box structure for an API
 `npm run build`<br>
 `npm run dev` OR `npm run start`, depending on environment.
 
+# How to test
+`npm test`
+
 # Troubleshooting
 If there is a problem while running bcrypt, try recompiling it. <br>
 On my mac, this worked: `CXX=clang++ npm rebuild bcrypt --build-from-source`
