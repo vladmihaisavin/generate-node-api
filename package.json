@@ -1,7 +1,7 @@
 {
-  "name": "authentication-api",
+  "name": "generate-node-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "Out of the box structure for an API",
   "main": "dist",
   "scripts": {
     "build": "babel src -s -D -d dist --presets es2015,stage-0",
@@ -11,11 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://SavinVladMihai@bitbucket.org/vladremus/authentication-api.git"
+    "url": "git+https://github.com/SavinVladMihai/generate-node-api.git"
   },
   "author": "",
-  "license": "ISC",
-  "homepage": "https://bitbucket.org/vladremus/authentication-api#readme",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SavinVladMihai/generate-node-api/issues"
+  },
+  "homepage": "https://github.com/SavinVladMihai/generate-node-api#readme",
   "dependencies": {
     "axios": "^0.18.0",
     "bcrypt": "^3.0.3",
@@ -33,7 +36,9 @@
     "passport": "^0.4.0",
     "passport-auth-token": "^1.0.1",
     "passport-jwt": "^4.0.0",
-    "passport-local": "^1.0.0"
+    "passport-local": "^1.0.0",
+    "swagger-jsdoc": "^3.2.6",
+    "swagger-ui-express": "^4.0.2"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
