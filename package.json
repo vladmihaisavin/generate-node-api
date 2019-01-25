@@ -6,6 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "bin": {
+    "generate-node-api": "./index.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SavinVladMihai/generate-node-api.git"
@@ -27,5 +30,8 @@
   "bugs": {
     "url": "https://github.com/SavinVladMihai/generate-node-api/issues"
   },
-  "homepage": "https://github.com/SavinVladMihai/generate-node-api#readme"
+  "homepage": "https://github.com/SavinVladMihai/generate-node-api#readme",
+  "dependencies": {
+    "inquirer": "^6.2.1"
+  }
 }
