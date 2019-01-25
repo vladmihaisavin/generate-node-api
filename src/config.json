@@ -1,0 +1,4 @@
+{
+  "bodyLimit": "100kb",
+  "corsHeaders": ["Link"]
+}
