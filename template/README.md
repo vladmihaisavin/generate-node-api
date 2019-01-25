@@ -5,6 +5,9 @@ Out of the box structure for an API
 `npm run build`<br>
 `npm run dev` OR `npm run start`, depending on environment.
 
+# How to access swagger docs
+Open browser and load `http://localhost:3000/api-docs/`, considering the PORT at which the server is running is 3000
+
 # How to test
 `npm test`
 
