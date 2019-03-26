@@ -12,7 +12,7 @@ import passport from 'passport';
 import passportConfig from './passport';
 import swaggerJSDoc from 'swagger-jsdoc';
 import swaggerUi from 'swagger-ui-express';
-import dataApiReachable from './dataPersistance';
+import dataApiReachable from './dataPersistence';
 
 const app = express();
 
