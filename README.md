@@ -5,9 +5,9 @@ Out of the box structure for an API
 1. Express
 2. Authentication and Authorization: PassportJS with JWT
 3. Testing: Mocha and Chai
-4. Data persistence: 
-4.1. Mongo with mongodb driver;
-4.2. PostgreSQL with pg driver and Sequelize ORM;
+4. Data persistence:<br>
+4.1. Mongo with mongodb driver;<br>
+4.2. PostgreSQL with pg driver and Sequelize ORM.
 5. Validation: Joi
 6. Documentation: Swagger
 
