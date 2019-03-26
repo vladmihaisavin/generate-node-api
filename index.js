@@ -4,9 +4,9 @@ const CURR_DIR = process.cwd();
 const inquirer = require('inquirer');
 const fs = require('fs');
 
-const QUESTIONS = [
+const setProjectName = () => [
   {
-    name: 'project-name',
+    name: 'projectName',
     type: 'input',
     message: 'Project name:',
     validate: (input) => {
@@ -15,6 +15,15 @@ const QUESTIONS = [
       }
       return 'Project name may only include letters, numbers, underscores and hashes.';
     }
+  }
+];
+
+const chooseDatabase = () => [
+  {
+    name: 'database',
+    type: 'list',
+    message: `Please select the database type:`,
+    choices: ['mongo', 'postgres' ]
   }
 ];
 
@@ -43,14 +52,22 @@ const generateProject = (templatePath, projectPath) => {
   }
 };
 
-inquirer.prompt(QUESTIONS)
+inquirer.prompt(setProjectName())
+  .then((answers) => new Promise((resolve, reject) => {
+    inquirer.prompt(chooseDatabase())
+      .then((newAnswer) => {
+        resolve({ ...answers, ...newAnswer });
+      })
+      .catch((err) => reject(err));
+  }))
   .then(answers => {
-    const projectName = answers['project-name'];
-    const templatePath = `${__dirname}/template`;
+    const projectName = answers['projectName'];
+    const templatePath = `${__dirname}/templates/${ answers['database'] }`;
 
     fs.mkdirSync(`${CURR_DIR}/${projectName}`);
 
     generateProject(templatePath, projectName);
-  });
+  })
+  .catch((err) => console.error(err));
 
 
