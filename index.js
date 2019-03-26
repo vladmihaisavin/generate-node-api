@@ -23,7 +23,7 @@ const chooseDatabase = () => [
     name: 'database',
     type: 'list',
     message: `Please select the database type:`,
-    choices: ['mongo', 'postgres' ]
+    choices: [new inquirer.Separator(), 'mongo', 'postgres', new inquirer.Separator(), 'api', new inquirer.Separator()]
   }
 ];
 
