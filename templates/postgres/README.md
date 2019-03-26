@@ -14,3 +14,6 @@ Open browser and load `http://localhost:3000/api-docs/`, considering the PORT at
 # Troubleshooting
 If there is a problem while running bcrypt, try recompiling it. <br>
 On my mac, this worked: `CXX=clang++ npm rebuild bcrypt --build-from-source`
+
+# How to run sequelize-cli
+npm run migrate

@@ -7,7 +7,8 @@
     "build": "babel src -s -D -d dist --presets es2015,stage-0",
     "dev": "nodemon -w src --inspect --exec \"babel-node src --presets es2015,stage-0\"",
     "start": "node dist",
-    "test": "./node_modules/.bin/mocha"
+    "test": "./node_modules/.bin/mocha",
+    "migrate": "npx -n='-r dotenv/config' sequelize db:migrate dotenv_config_path=.env"
   },
   "repository": {
     "type": "git",
