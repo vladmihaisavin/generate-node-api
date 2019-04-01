@@ -23,4 +23,6 @@ Out of the box structure for an API
 4.2. Postgres - the boilerplate will need a PostgreSQL database. You can run the migration to initialize the tables;<br>
 4.3. API - the boilerplate is useful to microservices which do not have direct access to a database. In this case, 
 for data persistence purposes, some third party API will be called. 
-5. Open the directory with that project name and start coding.
+5. Open the directory with that project name
+6. Follow the instructions from the README file
+7. Happy coding!
