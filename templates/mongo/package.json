@@ -29,7 +29,7 @@
     "express": "^4.16.4",
     "express-validation": "^1.0.2",
     "joi": "^14.3.1",
-    "jsonwebtoken": "^8.4.0",
+    "jsonwebtoken": "^9.0.0",
     "lodash": "^4.17.11",
     "moment": "^2.23.0",
     "mongodb": "^3.1.10",
